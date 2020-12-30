@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+/*
+ * @Author: your name
+ * @Date: 2020-12-28 20:35:14
+ * @LastEditTime: 2020-12-28 20:45:13
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \myweb-12.28\myweb18\src\App.js
+ */
 import './App.css';
-
+import RouterView from './routes'
+import routes from './routes/config'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <RouterView routes={routes}/>
     </div>
   );
 }
